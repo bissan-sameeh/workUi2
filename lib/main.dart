@@ -190,7 +190,7 @@ class MyApp extends StatelessWidget {
                 ],
               ),
               Container(
-                  //     padding: const EdgeInsets.all(4),
+                  padding: const EdgeInsets.all(24),
                   margin: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Colors.grey[300],
@@ -198,25 +198,20 @@ class MyApp extends StatelessWidget {
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Column(
-                        // mainAxisAlignment: MainAxisAlignment.center,
-                        // crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.perm_identity,
-                            color: Color(0xff002f6c),
-                            size: 40,
-                          ),
-                          Text(
-                            ".",
-                            style: TextStyle(
-                              fontSize: 40,
-                              color: Color(0xff002f6c),
-                            ),
-                          )
-                        ],
-                      ),
+                      const Column(children: [
+                        Icon(
+                          Icons.perm_identity,
+                          color: Color(0xff002f6c),
+                          size: 40,
+                        ),
+                        Icon(
+                          Icons.circle,
+                          color: Color(0xff002f6c),
+                          size: 10,
+                        ),
+                      ]),
                       Icon(
                         Icons.search,
                         color: Colors.grey[400],
